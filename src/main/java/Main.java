@@ -3,9 +3,9 @@ import controller.exception.ExceptionHandling;
 import controller.service.AccountService;
 import controller.service.CommentService;
 import controller.service.TweetService;
-import model.Entity.Account;
-import model.Entity.Comment;
-import model.Entity.Tweet;
+import model.entity.Account;
+import model.entity.Comment;
+import model.entity.Tweet;
 
 import java.sql.Date;
 import java.time.LocalDate;
@@ -15,9 +15,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 //        creat model.sql file
-        AccountService accountService = new AccountService();
-        TweetService tweetService = new TweetService();
-        CommentService commentService = new CommentService();
+        var accountService = new AccountService();
+        var tweetService = new TweetService();
+        var commentService = new CommentService();
         Account account = null;
         Tweet tweet = null;
         Comment comment = null;
